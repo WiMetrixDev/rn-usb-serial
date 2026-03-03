@@ -34,6 +34,7 @@ const definitions = {
 		CP210x: 'cp210x',
 		FTDI: 'ftdi',
 		PL2303: 'pl2303',
+		COM: 'COM ',
 	},
 };
 

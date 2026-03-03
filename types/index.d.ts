@@ -50,6 +50,7 @@ interface DefinitionsStatic {
 		CP210x: string;
 		FTDI: string;
 		PL2303: string;
+		COM: string;
 	};
 }
 export var definitions: DefinitionsStatic;
@@ -71,7 +72,7 @@ type StopBits = 1 | 2 | 3;
 type Parities = 0 | 1 | 2 | 3 | 4;
 type FlowControls = 0 | 1 | 2 | 3;
 type ReturnedDataTypes = 1 | 2;
-type Drivers = 'AUTO' | 'cdc' | 'ch34x' | 'cp210x' | 'ftdi' | 'pl2303';
+type Drivers = 'AUTO' | 'cdc' | 'ch34x' | 'cp210x' | 'ftdi' | 'pl2303' | 'COM ';
 
 interface RNSerialportStatic {
 	/**

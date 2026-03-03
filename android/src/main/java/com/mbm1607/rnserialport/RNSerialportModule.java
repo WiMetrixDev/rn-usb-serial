@@ -184,6 +184,7 @@ public class RNSerialportModule extends ReactContextBaseJavaModule {
 		driverList.add("pl2303");
 		driverList.add("ch34x");
 		driverList.add("cdc");
+		driverList.add("COM ");
 	}
 
 	/******************************* BEGIN PUBLIC SETTER METHODS **********************************/
