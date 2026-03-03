@@ -9,11 +9,11 @@ This fork is intended to update the react native version & gradle dependencies t
 
 ### Documents
 
-1. [Installation](https://github.com/mbm1607/rn-usb-serial/wiki/Installation)
-2. [Auto Connection](https://github.com/mbm1607/rn-usb-serial/wiki/Auto-Connection)
-3. [Manual Connection](https://github.com/mbm1607/rn-usb-serial/wiki/Manual-Connection)
-4. [Methods](https://github.com/mbm1607/rn-usb-serial/wiki/Methods)
-5. [Error Descriptions](https://github.com/mbm1607/rn-usb-serial/wiki/Error-Descriptions)
+1. [Installation](https://github.com/WiMetrixDev/rn-usb-serial/wiki/Installation)
+2. [Auto Connection](https://github.com/WiMetrixDev/rn-usb-serial/wiki/Auto-Connection)
+3. [Manual Connection](https://github.com/WiMetrixDev/rn-usb-serial/wiki/Manual-Connection)
+4. [Methods](https://github.com/WiMetrixDev/rn-usb-serial/wiki/Methods)
+5. [Error Descriptions](https://github.com/WiMetrixDev/rn-usb-serial/wiki/Error-Descriptions)
 
 ### Use to write data to port
 
@@ -39,4 +39,4 @@ RNSerialport.writeHexString('48454C4C4F');
 
 ### Java Package Name
 
-`com.mbm1607.rnserialport`
+`com.WiMetrixDev.rnserialport`

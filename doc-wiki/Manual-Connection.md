@@ -69,7 +69,7 @@ componentWillUnmount = async () => {
 
 _Installation Successfuly_
 
-[See for methods](https://github.com/mbm1607/rn-usb-serial/wiki/Methods)
+[See for methods](https://github.com/WiMetrixDev/rn-usb-serial/wiki/Methods)
 
 ### Full Example
 
@@ -129,33 +129,33 @@ class ManualConnection extends Component {
 		DeviceEventEmitter.addListener(
 			actions.ON_SERVICE_STARTED,
 			this.onServiceStarted,
-			this
+			this,
 		);
 		DeviceEventEmitter.addListener(
 			actions.ON_SERVICE_STOPPED,
 			this.onServiceStopped,
-			this
+			this,
 		);
 		DeviceEventEmitter.addListener(
 			actions.ON_DEVICE_ATTACHED,
 			this.onDeviceAttached,
-			this
+			this,
 		);
 		DeviceEventEmitter.addListener(
 			actions.ON_DEVICE_DETACHED,
 			this.onDeviceDetached,
-			this
+			this,
 		);
 		DeviceEventEmitter.addListener(actions.ON_ERROR, this.onError, this);
 		DeviceEventEmitter.addListener(
 			actions.ON_CONNECTED,
 			this.onConnected,
-			this
+			this,
 		);
 		DeviceEventEmitter.addListener(
 			actions.ON_DISCONNECTED,
 			this.onDisconnected,
-			this
+			this,
 		);
 		DeviceEventEmitter.addListener(actions.ON_READ_DATA, this.onReadData, this);
 		RNSerialport.setReturnedDataType(this.state.returnedDataType);
@@ -221,7 +221,7 @@ class ManualConnection extends Component {
 		} catch (err) {
 			Alert.alert(
 				'Error from getDeviceList()',
-				err.errorCode + ' ' + err.errorMessage
+				err.errorCode + ' ' + err.errorMessage,
 			);
 		}
 	};
@@ -239,7 +239,7 @@ class ManualConnection extends Component {
 					label={device.name}
 					value={null}
 				/>
-			)
+			),
 		);
 	}
 
@@ -278,7 +278,7 @@ class ManualConnection extends Component {
 			RNSerialport.setInterface(parseInt(this.state.interface, 10));
 			RNSerialport.connectDevice(
 				this.state.selectedDevice.name,
-				parseInt(this.state.baudRate, 10)
+				parseInt(this.state.baudRate, 10),
 			);
 		}
 	};

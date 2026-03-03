@@ -72,7 +72,7 @@ componentWillUnmount = async () => {
 
 _Installation Successfuly_
 
-[See for methods](https://github.com/mbm1607/rn-usb-serial/wiki/Methods)
+[See for methods](https://github.com/WiMetrixDev/rn-usb-serial/wiki/Methods)
 
 ### Full Example
 

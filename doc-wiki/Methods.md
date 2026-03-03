@@ -1,27 +1,27 @@
-[startUsbService](https://github.com/mbm1607/rn-usb-serial/wiki/Methods/#startUsbService)
-[stopUsbService](https://github.com/mbm1607/rn-usb-serial/wiki/Methods/#stopUsbService)
-[getDeviceList](https://github.com/mbm1607/rn-usb-serial/wiki/Methods/#getDeviceList)
-[connectDevice](https://github.com/mbm1607/rn-usb-serial/wiki/Methods/#connectDevice)
-[disconnect](https://github.com/mbm1607/rn-usb-serial/wiki/Methods/#disconnect)
-[isOpen](https://github.com/mbm1607/rn-usb-serial/wiki/Methods/#isOpen)
-[isSupported](https://github.com/mbm1607/rn-usb-serial/wiki/Methods/#isSupported)
-[isServiceStarted](https://github.com/mbm1607/rn-usb-serial/wiki/Methods/#isServiceStarted)
-[writeString](https://github.com/mbm1607/rn-usb-serial/wiki/Methods/#writeString)
-[writeBase64](https://github.com/mbm1607/rn-usb-serial/wiki/Methods/#writeBase64)
-[writeHexString](https://github.com/mbm1607/rn-usb-serial/wiki/Methods/#writeHexString)
+[startUsbService](https://github.com/WiMetrixDev/rn-usb-serial/wiki/Methods/#startUsbService)
+[stopUsbService](https://github.com/WiMetrixDev/rn-usb-serial/wiki/Methods/#stopUsbService)
+[getDeviceList](https://github.com/WiMetrixDev/rn-usb-serial/wiki/Methods/#getDeviceList)
+[connectDevice](https://github.com/WiMetrixDev/rn-usb-serial/wiki/Methods/#connectDevice)
+[disconnect](https://github.com/WiMetrixDev/rn-usb-serial/wiki/Methods/#disconnect)
+[isOpen](https://github.com/WiMetrixDev/rn-usb-serial/wiki/Methods/#isOpen)
+[isSupported](https://github.com/WiMetrixDev/rn-usb-serial/wiki/Methods/#isSupported)
+[isServiceStarted](https://github.com/WiMetrixDev/rn-usb-serial/wiki/Methods/#isServiceStarted)
+[writeString](https://github.com/WiMetrixDev/rn-usb-serial/wiki/Methods/#writeString)
+[writeBase64](https://github.com/WiMetrixDev/rn-usb-serial/wiki/Methods/#writeBase64)
+[writeHexString](https://github.com/WiMetrixDev/rn-usb-serial/wiki/Methods/#writeHexString)
 
 #### Setter Methods
 
-[setReturnedDataType](https://github.com/mbm1607/rn-usb-serial/wiki/Methods/#setReturnedDataType)
-[setDriver](https://github.com/mbm1607/rn-usb-serial/wiki/Methods/#setDriver)
-[setInterface](https://github.com/mbm1607/rn-usb-serial/wiki/Methods/#setInterface)
-[setAutoConnect](https://github.com/mbm1607/rn-usb-serial/wiki/Methods/#setAutoConnect)
-[setAutoConnectBaudRate](https://github.com/mbm1607/rn-usb-serial/wiki/Methods/#setAutoConnectBaudRate)
-[setDataBit](https://github.com/mbm1607/rn-usb-serial/wiki/Methods/#setDataBit)
-[setStopBit](https://github.com/mbm1607/rn-usb-serial/wiki/Methods/#setStopBit)
-[setParity](https://github.com/mbm1607/rn-usb-serial/wiki/Methods/#setParity)
-[setFlowControl](https://github.com/mbm1607/rn-usb-serial/wiki/Methods/#setFlowControl)
-[loadDefaultConnectionSetting](https://github.com/mbm1607/rn-usb-serial/wiki/Methods/#loadDefaultConnectionSetting)
+[setReturnedDataType](https://github.com/WiMetrixDev/rn-usb-serial/wiki/Methods/#setReturnedDataType)
+[setDriver](https://github.com/WiMetrixDev/rn-usb-serial/wiki/Methods/#setDriver)
+[setInterface](https://github.com/WiMetrixDev/rn-usb-serial/wiki/Methods/#setInterface)
+[setAutoConnect](https://github.com/WiMetrixDev/rn-usb-serial/wiki/Methods/#setAutoConnect)
+[setAutoConnectBaudRate](https://github.com/WiMetrixDev/rn-usb-serial/wiki/Methods/#setAutoConnectBaudRate)
+[setDataBit](https://github.com/WiMetrixDev/rn-usb-serial/wiki/Methods/#setDataBit)
+[setStopBit](https://github.com/WiMetrixDev/rn-usb-serial/wiki/Methods/#setStopBit)
+[setParity](https://github.com/WiMetrixDev/rn-usb-serial/wiki/Methods/#setParity)
+[setFlowControl](https://github.com/WiMetrixDev/rn-usb-serial/wiki/Methods/#setFlowControl)
+[loadDefaultConnectionSetting](https://github.com/WiMetrixDev/rn-usb-serial/wiki/Methods/#loadDefaultConnectionSetting)
 
 ### startUsbService
 
@@ -64,7 +64,7 @@ try {
 } catch (err) {
 	Alert.alert(
 		'Error from getDeviceList()',
-		err.errorCode + ' ' + err.errorMessage
+		err.errorCode + ' ' + err.errorMessage,
 	);
 }
 ```
