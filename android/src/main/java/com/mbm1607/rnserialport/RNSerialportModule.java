@@ -17,7 +17,7 @@ import com.facebook.react.bridge.WritableArray;
 import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.modules.core.DeviceEventManagerModule;
 import com.facebook.react.bridge.WritableNativeArray;
-
+import com.facebook.react.bridge.ReadableArray;
 import android.util.Base64;
 import android.util.Log;
 
@@ -378,16 +378,22 @@ public class RNSerialportModule extends ReactContextBaseJavaModule {
 	}
 
 	@ReactMethod
-	public void writeBytes(byte[] bytes) {
+	public void writeBytes(ReadableArray array) {
 		if(!usbServiceStarted){
-			eventEmit(onErrorEvent, createError(Definitions.ERROR_USB_SERVICE_NOT_STARTED, Definitions.ERROR_USB_SERVICE_NOT_STARTED_MESSAGE));
-			return;
+				eventEmit(onErrorEvent, createError(Definitions.ERROR_USB_SERVICE_NOT_STARTED, Definitions.ERROR_USB_SERVICE_NOT_STARTED_MESSAGE));
+				return;
+			}
+			if(!serialPortConnected || serialPort == null) {
+				eventEmit(onErrorEvent, createError(Definitions.ERROR_THERE_IS_NO_CONNECTION, Definitions.ERROR_THERE_IS_NO_CONNECTION_MESSAGE));
+				return;
+			}
+
+		byte[] data = new byte[array.size()];
+		for (int i = 0; i < array.size(); i++) {
+			data[i] = (byte) array.getInt(i);
 		}
-		if(!serialPortConnected || serialPort == null) {
-			eventEmit(onErrorEvent, createError(Definitions.ERROR_THERE_IS_NO_CONNECTION, Definitions.ERROR_THERE_IS_NO_CONNECTION_MESSAGE));
-			return;
-		}
-		serialPort.write(bytes);
+
+		serialPort.write(data);
 	}
 
 	@ReactMethod
